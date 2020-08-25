@@ -226,6 +226,7 @@ function cleanSuite(suite, totalTestsRegistered, config) {
     failures: failingTests,
     pending: pendingTests,
     skipped: skippedTests,
+    context: stringify(suite.context, null, 2),
     duration,
     root: suite.root,
     rootEmpty: suite.root && tests.length === 0,
